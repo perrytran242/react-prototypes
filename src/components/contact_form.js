@@ -4,7 +4,7 @@ import Field from './field';
 class ContactForm extends Component {
     constructor(props) {
         super(props);
-
+        console.log(props)
         this.state = {
             firstName: '',
             lastName: '',
@@ -16,7 +16,6 @@ class ContactForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         console.log('Handle Submits:', this.state);
-
         this.props.add(this.state);
         
         this.setState({
@@ -27,7 +26,7 @@ class ContactForm extends Component {
     handleInputChange = (event) => {
         this.setState({
             [event.target.name] : event.target.value,
-        })
+        });
     }
     render() {
         let { firstName, lastName, phone, email } = this.state;

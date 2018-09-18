@@ -14,10 +14,10 @@ export default props => {
                     <h4 className="card-title">{`${firstName} ${lastName}`}</h4>
                     <div className="card-text">
                         <p>
-                            <b>Phone: {phone}</b>
+                            <b>Phone: {phone} </b>
                         </p>
                         <p>
-                            <b>Email: {email}</b>
+                            <b>Email: {email} </b>
                         </p>
                     </div>
                 </div>
